@@ -7,4 +7,10 @@ parser = argparse.ArgumentParser(
 parser.add_argument('-p', '--password')
 args = parser.parse_args()
 
-print('password is '+ args.password)
+password = args.password
+
+if (password == 'password'):
+    print('login Successful!')
+else:
+    print("Credential doesn't match!")
+
