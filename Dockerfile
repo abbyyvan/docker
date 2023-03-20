@@ -1,4 +1,4 @@
 FROM python:3.9
-WORKDIR /
-COPY  ./app /
-CMD [ "./app" ]
+COPY  ./app ./
+
+ENTRYPOINT ["python", "./app", -p]
